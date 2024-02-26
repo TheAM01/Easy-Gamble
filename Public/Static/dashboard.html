@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>EasyGamble</title>
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="balance" id="balance">
+            
+        </div>
+
+        <div class="history" id="history">
+
+        </div>
+        
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="//utils-am.vercel.app/script.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script>
+        var socket = io();
+        buildDashboard(socket);
+
+    </script>
+</body>
+</html>
