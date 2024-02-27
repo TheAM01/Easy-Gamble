@@ -18,9 +18,10 @@ await createRoutes(app, dir);
 
 
 io.on('connection', (socket) => {
-  socketHandler(socket, io);
+  socketHandler(socket, io, dir);
 });
 
 server.listen(3000, () => {
-  console.log('listening on *:3000');
+    console.clear();
+    console.log('Server live on 192.168.0.108:3000!');
 });

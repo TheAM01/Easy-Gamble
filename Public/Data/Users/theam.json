@@ -1,0 +1,42 @@
+{
+    "id": "4202206201",
+    "name": "Abdul Mueed",
+    "username": "theam",
+    "password": "sillypassword",
+    "userData": {
+        "balance": "20003",
+        "currencyLocale": "Rs",
+        "history": [
+            {
+                "name": "Amazon.com",
+                "amount": 750,
+                "transactionType": 0
+            },
+            {
+                "name": "EasyGamble",
+                "amount": 1000,
+                "transactionType": 1
+            },
+            {
+                "name": "Daraz.pk",
+                "amount": 550,
+                "transactionType": 0
+            },
+            {
+                "name": "Loan return",
+                "amount": 5000,
+                "transactionType": 1
+            },
+            {
+                "name": "COD points",
+                "amount": 9500,
+                "transactionType": 0
+            },
+            {
+                "name": "EasyGamble",
+                "amount": 1000,
+                "transactionType": 0
+            }
+        ]
+    }
+}

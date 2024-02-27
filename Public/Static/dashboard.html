@@ -2,22 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/cdn/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/dashboard.css">
     <title>EasyGamble</title>
 </head>
 <body>
     
     <div class="main">
 
+        <div class="mini-heading">Balance</div>
+
         <div class="balance" id="balance">
-            
+            <div class="balance-amount">Rs</div>
+            <div class="balance-amount" id="balance-amount"></div>
+            <div class="balance-amount">/-</div>
         </div>
 
+        <div class="mini-heading"></div>
+
+    </div>
+    
+    <div class="main">
+
+        <div class="mini-heading">History</div>
         <div class="history" id="history">
-
+    
         </div>
-        
+
+    </div>
+
+    <div class="main">
+        <div class="main-heading">
+            ✔ You are up to date - no new news!
+        </div>
     </div>
     
     <script src="/socket.io/socket.io.js"></script>

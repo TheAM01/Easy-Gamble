@@ -1,13 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@300..700&display=swap');
+
+
+:root {
+    --primary: #12372A;
+    --secondary: #436850;
+    --tertiary: #bcbcbc;
+    --background: #09090a;
+    
+    --font: #FBFADA;
+    --font-inv: #09090a;
+
+    --texture-background: url("https://www.transparenttextures.com/patterns/flowers.png");
+}
 
 * {
     box-sizing: border-box;
+    /* padding: 5px;
+    border: 1px dotted red; */
 }
+
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "Lato", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
+    background-color: var(--background);
+    background-image: var(--texture-background);
+    color: var(--font);
 }
 
+.main div {
+    display: flex;
+}
+
+.main:first-of-type {
+    margin-top: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    backdrop-filter: blur(5px);
+    margin: 20px 0 20px 0;
+}
+
+.main-heading {
+    justify-content: center;
+    font-size: 20px;
+}
+
+.mini-heading {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 5px 0 5px 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}

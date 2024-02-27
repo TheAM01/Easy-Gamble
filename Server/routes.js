@@ -10,6 +10,10 @@ export default async function createRoutes(app, dir) {
         res.sendFile(__public+"/Static/dashboard.html");
     });
 
+    app.get('/room', (req, res) => {
+        res.sendFile(__public+"/Dynamic/room.html");
+    })
+
     // static files
 
     app.get('/scripts/:file', (req, res) => {
@@ -18,6 +22,10 @@ export default async function createRoutes(app, dir) {
 
     app.get('/styles/:file', (req, res) => {
         res.sendFile(`${__public}/Styles/${req.params.file}`);
+    });
+
+    app.get('/cdn/:file', (req, res) => {
+        res.sendFile(`${__public}/Assets/${req.params.file}`);
     });
 
 }
