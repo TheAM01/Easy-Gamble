@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/cdn/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/dashboard.css">
     <link rel="stylesheet" href="/styles/style.css">
     <title>EasyGamble</title>
 </head>
 <body>
+
+    <div class="navigation">
+        <div class="hamburger" onclick="alert('LIGMA BALSS!!!')">
+            <span class="hamburger-component"></span>
+            <span class="hamburger-component"></span>
+            <span class="hamburger-component"></span>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="mini-heading">Current pot</div>
+        <div class="pot" id="pot">
+            <div class="pot-amount">Rs</div>
+            <div class="pot-amount" id="pot-amount"></div>
+            <div class="pot-amount">/-</div>
+        </div>
+
+        <div class="mini-heading">Balance</div>
+
+        <div class="balance" id="balance">
+            <div class="balance-amount">Rs</div>
+            <div class="balance-amount" id="balance-amount"></div>
+            <div class="balance-amount">/-</div>
+        </div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="mini-heading">Controls</div>
+        <div class="room-controls" id="room-controls">
+            <input type="number" name="pot-contribution-amount" id="pot-contribution-amount" placeholder="100">
+        </div>
+
+    </div>
+
     <script src="/socket.io/socket.io.js"></script>
     <script src="//utils-am.vercel.app/script.js"></script>
     <script src="/scripts/script.js"></script>

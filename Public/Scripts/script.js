@@ -25,17 +25,31 @@ function buildDashboard(socket) {
             history.push(transactionParent);
 
         });
+        if (!data.history[0]) {
+            history[0] = element("div", "stray", {}, "No transaction history yet.");
+        }
 
         history.forEach(item => {
             document.getElementById("history").appendChild(item);
         });
+
 
     });
 
 }
 
 function joinRoom(socket) {
-    // 4202206201 is the id for theam -> sillypassword
-    socket.emit("join_room", "theam");
+    const username = "theam";
+
+    socket.emit("join_room", username);
+
+    socket.on(`room_join_${username}`, (room) => {
+        buildRoom(socket, room);
+    })
+
+}
+
+function buildRoom(socket, room) {
+
 
 }

@@ -9,21 +9,22 @@ export default async function socketHandler(socket, io, dir) {
 
     socket.on("join_room", (username) => {
 
-        let room = {
-            id: "placeholder_room_id",
-            members: [],
-            roomData: {
-                pot: 0,
-            }
-        };
+        const rooms = fs.readdirSync(`${dir}/Public/Data/Rooms/`);
+
+        if (!rooms[0]) return console.log("NO ROOMS CREATED!!");
+
+        let room = JSON.parse(fs.readFileSync(`${dir}/Public/Data/Rooms/${rooms[0]}`));
+
+        if (room.members.includes(username)) return;
 
         socket.join(room.id);
+        room.members.push("theam");
+
+        fs.writeFileSync(`${dir}/Public/Data/Rooms/${rooms[0]}`, JSON.stringify(room));
+
+        io.to(socket.id).emit(`room_join_${username}`, room);
 
     });
-
-    socket.on("recrec", (data) => {
-        io.to("placeholder_room_id").emit("print", "balls");
-    })
 
 }
 
