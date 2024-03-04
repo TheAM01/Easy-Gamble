@@ -5,7 +5,7 @@ function test() {
 
 function buildDashboard(socket) {
 
-    const userId = "zocmo";
+    const userId = "theam";
     socket.emit("dashboard_data", userId);
 
     socket.on(`dashboard_data_${userId}`, (data) => {
@@ -49,7 +49,3 @@ function joinRoom(socket) {
 
 }
 
-function buildRoom(socket, room) {
-
-
-}

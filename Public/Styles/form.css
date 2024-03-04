@@ -1,0 +1,21 @@
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid var(--tertiary);
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+    background-color: transparent;
+    color: var(--font);
+}
+
+input#submit-login {
+    width: min-content;
+    margin: 10px auto;
+}

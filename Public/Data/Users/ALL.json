@@ -1,0 +1,103 @@
+[
+  {
+    "id": "4202207203",
+    "name": "Dracon",
+    "username": "dracon",
+    "password": "dracon_op",
+    "userData": {
+      "id": "4202207203",
+      "name": "Dracon",
+      "username": "dracon",
+      "balance": "200001",
+      "currencyLocale": "Rs",
+      "history": []
+    }
+  },
+  {
+    "id": "4202207204",
+    "name": "Abdul Muzil",
+    "username": "muzil",
+    "password": "longpotatochips",
+    "userData": {
+      "id": "4202207204",
+      "name": "Abdul Muzil",
+      "username": "muzil",
+      "balance": "20002",
+      "currencyLocale": "Rs",
+      "history": []
+    }
+  },
+  {
+    "id": "4202206201",
+    "name": "Abdul Mueed",
+    "username": "theam",
+    "password": "sillypassword",
+    "userData": {
+      "id": "4202206201",
+      "name": "Abdul Mueed",
+      "username": "theam",
+      "balance": "20003",
+      "currencyLocale": "Rs",
+      "history": [
+        {
+          "name": "Amazon.com",
+          "amount": 750,
+          "transactionType": 0
+        },
+        {
+          "name": "EasyGamble",
+          "amount": 1000,
+          "transactionType": 1
+        },
+        {
+          "name": "Daraz.pk",
+          "amount": 550,
+          "transactionType": 0
+        },
+        {
+          "name": "Loan return",
+          "amount": 5000,
+          "transactionType": 1
+        },
+        {
+          "name": "COD points",
+          "amount": 9500,
+          "transactionType": 0
+        },
+        {
+          "name": "EasyGamble",
+          "amount": 1000,
+          "transactionType": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "4202207201",
+    "name": "Yagami",
+    "username": "yagami",
+    "password": "iori_yagami",
+    "userData": {
+      "id": "4202207201",
+      "name": "Yagami",
+      "username": "yagami",
+      "balance": "20004",
+      "currencyLocale": "Rs",
+      "history": []
+    }
+  },
+  {
+    "id": "4202207202",
+    "name": "Zocmo",
+    "username": "zocmo",
+    "password": "zocmo_khan",
+    "userData": {
+      "id": "4202207202",
+      "name": "Zocmo",
+      "username": "zocmo",
+      "balance": "20005",
+      "currencyLocale": "Rs",
+      "history": []
+    }
+  }
+]

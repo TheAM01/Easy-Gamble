@@ -1,8 +1,15 @@
+import login from "./Middleware/login.js";
+
 export default async function createRoutes(app, dir) {
 
     const __public = `${dir}/Public`;
 
     app.get('/', (req, res) => {
+        res.sendFile(__public+"/index.html");
+        console.log(decodeURI(req.cookies.user_data));
+    });
+
+    app.get('/home', (req, res) => {
         res.sendFile(__public+"/index.html");
     });
 
@@ -12,7 +19,18 @@ export default async function createRoutes(app, dir) {
 
     app.get('/room', (req, res) => {
         res.sendFile(__public+"/Dynamic/room.html");
+    });
+
+    app.get('/login', (req, res) => {
+        res.sendFile(__public+"/User/login.html");
+    });
+
+    app.get('/logout', (req, res) => {
+        res.clearCookie("authenticated");
+        res.clearCookie("user_data");
+        res.redirect("/?deauthenticated=true");
     })
+
 
     // static files
 
@@ -27,5 +45,11 @@ export default async function createRoutes(app, dir) {
     app.get('/cdn/:file', (req, res) => {
         res.sendFile(`${__public}/Assets/${req.params.file}`);
     });
+
+    // POST routes
+
+    app.post('/login', (req, res) => {
+        return login(req, res, dir);
+    })
 
 }
